@@ -195,53 +195,49 @@
         // 8. Specialists Doctor Tabs (100% Exact OG Aveline Studio Specialists)
     var specialistsData = [
       {
-        name: 'Dr. Elena Varga',
-        role: 'Cosmetic dentistry',
+        name: 'W. Pierce Hutchings',
+        role: 'Managing Director & Hospitality Partner',
         photo: './assets/LhRdrbEme10eLb0FCf78WEGE_dr_varga.webp',
-        alt: 'Dr. Elena Varga · Cosmetic dentistry',
-        bio: 'Elena leads our cosmetic work, from whitening to full veneer cases. She plans every smile digitally first, so you can see the result before a single tooth is touched.',
-        experience: '12 years',
-        languages: 'English, Hungarian',
-        inStudio: 'Mon, Wed, Fri',
-        rating: '4.9',
-        reviews: '312 reviews'
+        alt: 'W. Pierce Hutchings · Managing Director & Hospitality Partner',
+        bio: 'Over two decades stewarding historic Chicago landmark properties with uncompromised guest service and authentic architectural preservation.',
+        experience: '24 years',
+        languages: 'English',
+        education: 'Cornell University School of Hotel Administration',
+        specialties: ["Landmark Hospitality", "Guest Experience", "Historic Hotels"]
       },
       {
-        name: 'Dr. Daniel Costa',
-        role: 'Orthodontics',
+        name: 'Marsha Forsythe',
+        role: 'Director of Guest Experience & Concierge',
         photo: './assets/i9YV55qg35geFijtWVbcSvyZI_dr_costa.webp',
-        alt: 'Dr. Daniel Costa · Orthodontics',
-        bio: 'Daniel has straightened more than 1,400 smiles with clear aligners and fixed braces. He is known for realistic timelines and very few surprise extra stages.',
-        experience: '9 years',
-        languages: 'English, Portuguese',
-        inStudio: 'Tue, Thu, Sat',
-        rating: '4.8',
-        reviews: '268 reviews'
+        alt: 'Marsha Forsythe · Director of Guest Experience & Concierge',
+        bio: 'Curating bespoke cultural itineraries, private dining access, and residential comfort for domestic and international travelers.',
+        experience: '19 years',
+        languages: 'English, French',
+        education: 'Les Roches International School of Hotel Management',
+        specialties: ["Private Concierge", "Cultural Itineraries", "Guest Comfort"]
       },
       {
-        name: 'Dr. Sofia Reyes',
-        role: "Children's dentistry",
-        photo: './assets/TjZGJmXA2itrXL8hlBEh6zV8PA_dr_reyes.webp',
-        alt: "Dr. Sofia Reyes · Children's dentistry",
-        bio: 'Sofia makes first visits fun and fear-free. Children see her from their first tooth through their teens, with parents in the room for every appointment.',
-        experience: '7 years',
-        languages: 'English, Spanish',
-        inStudio: 'Mon, Tue, Thu',
-        rating: '4.9',
-        reviews: '204 reviews'
+        name: 'Julian Vance',
+        role: 'Heritage Architecture & Spatial Curator',
+        photo: './assets/a37k1yA2pG9jMh6u220b345f.webp',
+        alt: 'Julian Vance · Heritage Architecture & Spatial Curator',
+        bio: 'Preserving the historic integrity and acoustic calm of our 1920s suites while integrating contemporary residential amenities.',
+        experience: '14 years',
+        languages: 'English, Italian',
+        education: 'School of the Art Institute of Chicago (Historic Preservation)',
+        specialties: ["Historic Millwork", "Acoustic Calm", "Suite Architecture"]
       },
       {
-        name: 'Dr. Ryan Okafor',
-        role: 'Implants & surgery',
-        photo: './assets/guZzPzCD5moyy6x2UlwrIWlV1yI_dr_okafor.webp',
-        alt: 'Dr. Ryan Okafor · Implants & surgery',
-        bio: 'Ryan places implants with guided surgery, planned from a 3D scan of your jaw. Most patients return to work the next day with a temporary tooth in place.',
-        experience: '15 years',
-        languages: 'English, Yoruba',
-        inStudio: 'Wed, Thu, Fri',
-        rating: '5.0',
-        reviews: '176 reviews'
-      }
+        name: 'Elena Rostova',
+        role: 'Private Salon & Events Concierge',
+        photo: './assets/b9487c194a28f731c54c_dr_reyes.webp',
+        alt: 'Elena Rostova · Private Salon & Events Concierge',
+        bio: 'Managing private gatherings, executive retreats, and salon receptions across our landmark Gold Coast and River North spaces.',
+        experience: '12 years',
+        languages: 'English, Russian',
+        education: 'Northwestern University, Hospitality Management',
+        specialties: ["Private Salons", "Executive Retreats", "Event Concierge"]
+      },
     ];
 
         var specButtons = document.querySelectorAll('#team [data-framer-name="List"] button, #team button, .framer-t9vo8c button');
@@ -351,11 +347,11 @@
     var yourVisitTitle = bookSec.querySelector('[data-framer-name="Your visit"] p, [data-framer-name="Your visit"]');
 
     var treatments = {
-      'Check-up & cleaning': { name: 'Smile Assessment & Check-up', doctor: 'Dr. Elena Varga' },
-      'Whitening consultation': { name: 'Teeth Whitening Consultation', doctor: 'Dr. Elena Varga' },
-      'Aligner consultation': { name: 'Clear Aligner Assessment', doctor: 'Dr. Daniel Costa' },
-      'Implant consultation': { name: 'Dental Implant Consultation', doctor: 'Dr. Ryan Okafor' },
-      'Emergency appointment': { name: "Pediatric & Family Consultation", doctor: 'Dr. Sofia Reyes' }
+      'Check-up & cleaning': { name: 'Ambassador Gold Coast Consultation', doctor: 'W. Pierce Hutchings' },
+      'Whitening consultation': { name: 'Mag Mile Suites Consultation', doctor: 'Marsha Forsythe' },
+      'Aligner consultation': { name: 'River North Stays Consultation', doctor: 'Julian Vance' },
+      'Implant consultation': { name: 'Wrigleyville Historic Consultation', doctor: 'W. Pierce Hutchings' },
+      'Emergency appointment': { name: "Extended Residences Consultation", doctor: 'Elena Rostova' }
     };
 
     optionCards.forEach(function(card) {
@@ -1508,8 +1504,8 @@
       var bar = document.querySelector('.framer-1mwbh4g');
       var heroCard = document.querySelector('.framer-1jm03qa') || document.querySelector('[data-framer-name="Hero"]');
       var logoImg = document.querySelector('.framer-1hknmid img');
-      var whiteLogoSrc = './assets/YRTy2NxOkfcVHGa80qEHJySIPaY_4eedcb44.svg';
-      var darkLogoSrc = './assets/nCxPVkNYSQdYDt5mXEqXIlRVyKA_f3dd68ce.svg';
+      var whiteLogoSrc = './assets/chc_logo.png';
+      var darkLogoSrc = './assets/chc_logo.png';
 
       function updateNavState() {
         var barHeight = bar ? bar.offsetHeight : 72;
